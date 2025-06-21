@@ -75,10 +75,10 @@
         symbole {
             display-name = "Sym";
             bindings = <
-                &none  &none  &none   &none   &kp RA(NUMBER_4)    &kp RA(EQUAL)  &none                  &kp NUMBER_1      &none                        &kp RA(NUMBER_3)
-                &none  &none  &none   &none   &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt RA(NUMBER_8) LS(PERIOD)  &kp RIGHT_BRACE
-&studio_unlock  &none  &none  &none   &none   &kp NUMBER_5        &kp MINUS      &mt NUMBER_3 NUMBER_3  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACE    &kp ESCAPE
-                              &trans  &trans  &to 0               &to 3          &trans                 &trans
+                &none  &none  &none  &none   &kp RA(NUMBER_4)    &kp RA(EQUAL)  &none                  &kp NUMBER_1      &none                        &kp RA(NUMBER_3)
+                &none  &none  &none  &none   &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt RA(NUMBER_8) LS(PERIOD)  &kp RIGHT_BRACE
+&studio_unlock  &none  &none  &none  &none   &kp NUMBER_5        &kp MINUS      &mt NUMBER_3 NUMBER_4  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACE    &kp ESCAPE
+                              &to 4  &trans  &to 0               &to 3          &trans                 &trans
             >;
         };
 
@@ -92,23 +92,12 @@
             >;
         };
 
-        Gaming {
-            display-name = "Game";
+        lol {
             bindings = <
-            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
-            &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Gaming+ {
-            display-name = "Game+";
-            bindings = <
-        &kp F10  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp T     &kp RA(RC(Y))  &kp RA(RC(U))  &trans  &trans  &kp LC(RA(DEL))
-        &kp L    &kp O         &kp Y         &kp K         &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &to 0    &trans        &trans        &trans        &trans    &trans         &trans         &trans  &trans  &kp F22          &kp LA(F4)
-                               &kp J         &kp I         &kp M     &trans         &trans         &trans
+         &kp Q  &kp W  &kp E      &kp R      &kp T    &kp Y   &kp U     &kp I      &kp O    &kp P
+         &kp A  &kp S  &kp D      &kp F      &kp G    &kp H   &kp J     &kp K      &kp L    &kp SEMI
+&kp TAB  &kp Z  &kp X  &kp C      &kp V      &kp B    &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                       &kp LCTRL  &kp SPACE  &mo 1    &trans  &kp BSPC  &kp ENTER
             >;
         };
     };
