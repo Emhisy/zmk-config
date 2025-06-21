@@ -75,10 +75,10 @@
         symbole {
             display-name = "Sym";
             bindings = <
-                &none  &none  &none   &none  &kp RA(PERCENT)     &kp RA(EQUAL)  &none                  &kp NUMBER_1      &none                        &kp RA(NUMBER_3)
-                &none  &none  &none   &none  &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt LS(PERIOD) RA(NUMBER_8)  &kp RIGHT_BRACE
-&studio_unlock  &none  &none  &none   &none  &kp NUMBER_5        &kp MINUS      &mt NUMBER_4 NUMBER_3  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACE    &kp ESCAPE
-                              &trans  &none  &to 0               &to 3          &trans                 &trans
+                &none  &none  &none   &none   &kp RA(PERCENT)     &kp RA(EQUAL)  &none                  &kp NUMBER_1      &none                        &kp RA(NUMBER_3)
+                &none  &none  &none   &none   &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt LS(PERIOD) RA(NUMBER_8)  &kp RIGHT_BRACE
+&studio_unlock  &none  &none  &none   &none   &kp NUMBER_5        &kp MINUS      &mt NUMBER_4 NUMBER_3  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACE    &kp ESCAPE
+                              &trans  &trans  &to 0               &to 3          &trans                 &trans
             >;
         };
 
