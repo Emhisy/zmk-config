@@ -65,10 +65,10 @@
         nav {
             display-name = "Nav";
             bindings = <
-             &kp RA(NUMBER_0)  &kp NUMBER_2  &kp UP_ARROW  &kp NUMBER_7  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-             &kp ESCAPE        &kp LEFT      &kp DOWN      &kp RIGHT     &kp RA(NUMBER_5)    &kp RA(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp NUMBER_6
-&kp LA(TAB)  &kp LEFT_WIN      &kp NUBS      &kp EQUAL     &kp LS(NUBS)  &kp NUMBER_5        &kp MINUS      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(PERIOD)  &kp ESCAPE
-                                             &none         &trans        &to 0               &to 2          &kp DELETE        &kp LS(NUMBER_0)
+             &kp RA(F13)   &kp NUMBER_2  &kp UP_ARROW  &kp NUMBER_7  &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
+             &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &kp RA(NUMBER_5)    &kp RA(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp NUMBER_6
+&kp LA(TAB)  &kp LEFT_WIN  &kp NUBS      &kp EQUAL     &kp LS(NUBS)  &kp NUMBER_5        &kp MINUS      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(PERIOD)  &kp ESCAPE
+                                         &none         &trans        &to 0               &to 2          &kp DELETE        &kp LS(NUMBER_0)
             >;
         };
 
