@@ -35,15 +35,14 @@
 
 / {
     behaviors {
-        hm: homerow_mods {
+        lp: Long-Press {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <125>;
-            global-quick-tap;
+            label = "Long Press";
             bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <350>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -55,30 +54,40 @@
         Base {
             display-name = "Base";
             bindings = <
+         &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U          &kp I             &kp O           &kp P
+         &lp LEFT_WIN A  &lp LEFT_ALT S  &lp LEFT_SHIFT D  &lp LCTRL F  &kp G    &kp H  &lp LCTRL J    &lp LEFT_SHIFT K  &lp LEFT_ALT L  &lp LEFT_GUI SEMI
+&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp N  &kp M          &kp COMMA         &kp DOT         &kp SLASH          &kp ENTER
+                                         &kp LEFT_CONTROL  &kp SPACE    &mo 2    &mo 3  &kp BACKSPACE  &kp RIGHT_SHIFT
+            >;
+        };
+
+        gaming {
+            display-name = "game";
+            bindings = <
          &kp Q  &kp W  &kp E             &kp R      &kp T    &kp Y  &kp U          &kp I            &kp O    &kp P
          &kp A  &kp S  &kp D             &kp F      &kp G    &kp H  &kp J          &kp K            &kp L    &kp SEMI
 &kp TAB  &kp Z  &kp X  &kp C             &kp V      &kp B    &kp N  &kp M          &kp COMMA        &kp DOT  &kp SLASH  &kp ENTER
-                       &kp LEFT_CONTROL  &kp SPACE  &mo 1    &mo 2  &kp BACKSPACE  &kp RIGHT_SHIFT
+                       &kp LEFT_CONTROL  &kp SPACE  &mo 2    &mo 3  &kp BACKSPACE  &kp RIGHT_SHIFT
             >;
         };
 
         nav {
             display-name = "Nav";
             bindings = <
-             &kp F13       &kp NUMBER_2  &kp UP_ARROW            &kp NUMBER_7             &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp LS(EQUAL)
-             &kp ESCAPE    &kp LEFT      &kp DOWN                &kp RIGHT                &kp RA(NUMBER_5)    &kp RA(MINUS)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp NUMBER_6
-&kp LA(TAB)  &kp LEFT_WIN  &kp NUBS      &kp EQUAL               &kp LS(NUBS)             &kp NUMBER_5        &kp MINUS      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp BACKSLASH  &kp ESCAPE
-                                         &kp LG(LC(LEFT_ARROW))  &kp LC(LG(RIGHT_ARROW))  &to 0               &trans         &kp DELETE        &kp LS(NUMBER_0)
+         &kp NUMBER_0  &kp NUMBER_2  &kp UP_ARROW  &kp NUMBER_7  &kp F5    &none   &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &none
+         &kp ESCAPE    &kp LEFT      &kp DOWN      &kp RIGHT     &none     &none   &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &none
+&kp TAB  &kp LEFT_ALT  &none         &kp CAPS      &none         &none     &none   &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &none  &none
+                                     &none         &none         &none     &tog 1  &kp DELETE        &kp LS(NUMBER_0)
             >;
         };
 
         symbole {
             display-name = "Sym";
             bindings = <
-          &kp F12  &kp F7  &kp F8        &kp F9        &kp RA(NUMBER_4)    &kp RA(EQUAL)  &kp LS(SINGLE_QUOTE)   &kp NUMBER_1      &kp RA(NUMBER_0)             &kp RA(NUMBER_3)
-          &kp F11  &kp F4  &kp F5        &kp F6        &kp RA(NUMBER_5)    &kp RA(MINUS)  &mt NUMBER_8 NUMBER_6  &kp RA(NUMBER_6)  &mt RA(NUMBER_8) LS(PERIOD)  &kp RIGHT_BRACKET
-&kp APOS  &kp F10  &kp F1  &kp F2        &kp F3        &kp NUMBER_5        &kp MINUS      &mt NUMBER_3 NUMBER_4  &kp RA(NUMBER_2)  &kp RA(NUMBER_7)             &kp LEFT_BRACKET   &kp ESCAPE
-                           &kp NUMBER_0  &kp NUMBER_9  &to 0               &trans         &trans                 &trans
+          &kp RA(NUMBER_8)  &kp LEFT_BRACKET       &kp BACKSLASH     &kp RIGHT_BRACKET  &kp RA(NUMBER_3)    &none         &kp NUMBER_3  &kp NUMBER_4  &kp RA(NUMBER_7)  &kp LS(PERIOD)
+          &kp RA(NUMBER_6)  &kp LS(DOUBLE_QUOTES)  &kp RA(NUMBER_2)  &kp EQUAL          &kp LS(EQUAL)       &kp NUMBER_6  &kp NUMBER_5  &kp MINUS     &kp RA(NUMBER_4)  &kp RA(EQUAL)
+&kp APOS  &none             &none                  &none             &kp NUMBER_1       &kp RA(NUMBER_2)    &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)  &kp RA(MINUS)   &none
+                                                   &none             &none              &to 0               &none         &none         &none
             >;
         };
     };
