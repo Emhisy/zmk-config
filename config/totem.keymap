@@ -86,7 +86,7 @@
             bindings = <
           &kp RA(NUMBER_8)  &kp LEFT_BRACKET       &kp BACKSLASH     &kp RIGHT_BRACKET  &kp RA(NUMBER_3)    &none         &kp NUMBER_3  &kp NUMBER_4  &kp RA(NUMBER_7)  &kp LS(PERIOD)
           &kp RA(NUMBER_6)  &kp LS(DOUBLE_QUOTES)  &kp RA(NUMBER_2)  &kp EQUAL          &kp LS(EQUAL)       &kp NUMBER_6  &kp NUMBER_5  &kp MINUS     &kp RA(NUMBER_4)  &kp RA(EQUAL)
-&kp APOS  &none             &none                  &none             &kp NUMBER_1       &kp RA(NUMBER_2)    &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)  &kp RA(MINUS)   &none
+&kp APOS  &none             &none                  &none             &kp NUMBER_1       &kp RA(NUMBER_0)    &kp NUMBER_8  &kp NUBS      &kp LS(NUBS)  &kp RA(NUMBER_5)  &kp RA(MINUS)   &none
                                                    &none             &none              &to 0               &none         &none         &none
             >;
         };
